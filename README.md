@@ -4,9 +4,9 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./images/screenshot.jpg)
 
 ### Links
 
--   Solution URL: [Add solution URL here](https://your-solution-url.com)
--   Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-   [Solution URL](https://github.com/AfterWaGa/FM_Preview-component)
+-   [Live Site URL](https://afterwaga.github.io/FM_Preview-component/)
