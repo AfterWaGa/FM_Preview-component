@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Article preview component</title>
+</head>
+
+<body>
+    <main>
+        <div class="card">
+            <picture>
+                <source media="(max-width: 768px)" srcset="images/furniture-mob.jpg">
+                <img src="images/furniture.jpg" alt="Furniture photo" class="card__img" width="285" height="280">
+            </picture>
+
+            <div class="card-content">
+                <h1 class="card-content__title">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h1>
+
+                <p class="card-content__text">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
+
+                <div class="card-bottom">
+                    <img src="images/avatar-michelle.jpg" alt="Michelle Appleton" class="card-bottom__author-img" width="40px" height="40px">
+                    <h2 class="card-bottom__author-name">Michelle Appleton</h2>
+                    <time class="card-bottom__date" datetime="2020-28-06">28 Jun 2020</time>
+
+                    <button class="card-bottom__btn">
+                        <svg class="card-bottom__btn-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="">
+                            <circle cx="16" cy="16" r="16" fill="" />
+                            <path d="M24 15.495L17.7663 9.01392V12.8807H16.4409C12.3314 12.8807 9 16.0393 9 19.9358V21.9849L9.58868 21.3733C11.5901 19.2941 14.4221 18.1094 17.3912 18.1094H17.7663V21.9762L24 15.495Z" fill="">
+                        </svg>
+                        <span class="visually-hidden">Show links</span>
+
+                        <div class="links">
+                            <span class="links__title">Share</span>
+                            <ul class="links__list">
+                                <li class="links__item">
+                                    <a class="links__link" href="#">
+                                        <svg class="facebook-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="">
+                                            <path d="M18.8958 0H1.10417C0.494167 0 0 0.494167 0 1.10417V18.8967C0 19.5058 0.494167 20 1.10417 20H10.6833V12.255H8.07667V9.23667H10.6833V7.01083C10.6833 4.4275 12.2608 3.02083 14.5658 3.02083C15.67 3.02083 16.6183 3.10333 16.895 3.14V5.84L15.2967 5.84083C14.0433 5.84083 13.8008 6.43667 13.8008 7.31V9.2375H16.79L16.4008 12.2558H13.8008V20H18.8975C19.5058 20 20 19.5058 20 18.8958V1.10417C20 0.494167 19.5058 0 18.8958 0Z" fill="" />
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <li class="links__item">
+                                    <a class="links__link" href="#"><svg class="twitter-icon" xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="">
+                                            <path d="M21 3.17215C20.2642 3.49882 19.4733 3.71882 18.6433 3.81799C19.4908 3.31049 20.1417 2.50632 20.4475 1.54799C19.655 2.01799 18.7767 2.35965 17.8417 2.54382C17.0942 1.74632 16.0267 1.24799 14.8467 1.24799C12.1975 1.24799 10.2508 3.71965 10.8492 6.28549C7.44 6.11465 4.41667 4.48132 2.3925 1.99882C1.3175 3.84299 1.835 6.25549 3.66167 7.47715C2.99 7.45549 2.35667 7.27132 1.80417 6.96382C1.75917 8.86465 3.12167 10.643 5.095 11.0388C4.5175 11.1955 3.885 11.2322 3.24167 11.1088C3.76333 12.7388 5.27833 13.9247 7.075 13.958C5.35 15.3105 3.17667 15.9147 1 15.658C2.81583 16.8222 4.97333 17.5013 7.29 17.5013C14.9083 17.5013 19.2125 11.0672 18.9525 5.29632C19.7542 4.71715 20.45 3.99465 21 3.17215Z" fill="" stroke="" />
+                                        </svg></a>
+                                </li>
+
+                                <li class="links__item">
+                                    <a class="links__link" href="#"><svg class="pinterest-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="">
+                                            <path d="M10 0C4.4775 0 0 4.47667 0 10C0 14.2367 2.63583 17.855 6.35583 19.3117C6.26833 18.5208 6.18917 17.3075 6.39083 16.4442C6.5725 15.6633 7.56333 11.4733 7.56333 11.4733C7.56333 11.4733 7.26417 10.8742 7.26417 9.98833C7.26417 8.59833 8.07 7.56 9.07333 7.56C9.92583 7.56 10.3383 8.20083 10.3383 8.96833C10.3383 9.82583 9.7925 11.1083 9.51 12.2975C9.27417 13.2925 10.0092 14.105 10.9908 14.105C12.7683 14.105 14.1342 12.2308 14.1342 9.52583C14.1342 7.13167 12.4142 5.4575 9.9575 5.4575C7.1125 5.4575 5.4425 7.59167 5.4425 9.79667C5.4425 10.6558 5.77333 11.5783 6.18667 12.0783C6.26833 12.1775 6.28 12.265 6.25583 12.3658L5.97833 13.4992C5.93417 13.6825 5.83333 13.7217 5.64333 13.6333C4.39417 13.0517 3.61333 11.2258 3.61333 9.75917C3.61333 6.605 5.905 3.7075 10.2208 3.7075C13.69 3.7075 16.3858 6.18 16.3858 9.48333C16.3858 12.93 14.2133 15.7033 11.1967 15.7033C10.1833 15.7033 9.23083 15.1775 8.905 14.555L8.28167 16.9325C8.05583 17.8017 7.44667 18.8908 7.03833 19.5542C7.975 19.8433 8.96917 20 10 20C15.5225 20 20 15.5225 20 10C20 4.47667 15.5225 0 10 0Z" fill="" />
+                                        </svg></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor<a>. Coded by <a href="#">Your Name Here<a>.
+    </div> -->
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
